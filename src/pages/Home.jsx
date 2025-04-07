@@ -2,12 +2,9 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import gymImage from '../assets/hero.jpg';
-import BMICalculator from '../components/BmiCalculator';  // BMI Calculator import
 import './Home.css';
 import CalorieCalculator from '../components/CalorieCalculator';
 import Testimonials from "../components/Testimonials";
-// <Testimonials /> in the Home component
-
 
 export default function Home() {
   return (
@@ -77,10 +74,9 @@ export default function Home() {
         </div>
       </motion.section>
 
-      {/* BMI Calculator Section */}
-      <section className="bmi-calculator-section">
-        <h2>BMI Calculator</h2>
-      </section>
+  
+
+      {/* Calorie Calculator + Testimonials */}
       <section className="Calorie-Calculator-section">
         <CalorieCalculator />
         <Testimonials />
