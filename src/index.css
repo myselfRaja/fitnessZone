@@ -1,0 +1,48 @@
+/* src/index.css */
+body {
+  background-color: #333;
+  color: white;
+}
+
+button {
+  margin-top: 20px;
+  border-radius: 10px;
+  padding: 10px 20px;
+}
+body {
+  background-color: #f4f4f9;
+  color: #333;
+}
+
+h2 {
+  margin-bottom: 20px;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+ul li {
+  margin-bottom: 10px;
+  font-size: 1.2rem;
+}
+
+
+
+/* hero-section */
+.hero-section {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.text-center h1 {
+  font-size: 3rem;
+  margin-bottom: 15px;
+}
+
+.text-center p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}

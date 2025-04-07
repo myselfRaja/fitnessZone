@@ -1,0 +1,350 @@
+/* src/pages/About.css */
+
+/* General Container Styling */
+.about-container {
+  margin-top: 70px; /* Navbar se thoda neeche */
+  padding: 20px;
+  padding: 2.5rem;
+  background-color: white;
+  color: #fff;
+  font-family: Arial, sans-serif;
+  overflow-x: hidden;
+}
+
+/* Heading & Tagline */
+.about-heading h1 {
+  text-align: center;
+  font-size: 3rem;
+  color: #fff;
+  animation: slideDown 1s ease-in-out;
+}
+
+@keyframes slideDown {
+  from { transform: translateY(-50px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+
+
+.about-heading h1 {
+  font-size: 3.2rem;
+  font-weight: bold;
+  color: #e63946;
+  letter-spacing: 2px;
+  margin-bottom: 0.8rem;
+  text-shadow: 2px 2px #333;
+  transition: transform 0.3s;
+}
+
+.about-heading p {
+  font-size: 1.4rem;
+  font-style: italic;
+  color: #f1faee;
+  opacity: 0.9;
+  transition: opacity 0.3s;
+}
+
+.about-heading h1:hover {
+  transform: scale(1.05);
+}
+
+.about-heading p:hover {
+  opacity: 1;
+}
+
+.about-container {
+  position: relative;
+  padding: 100px 20px;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  color: #fff;
+}
+
+.about-content {
+  position: relative;
+  z-index: 1;
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.6);
+}
+
+.about-heading h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+  color: #00ff99;
+  animation: slideDown 1s ease-in-out;
+}
+
+@keyframes slideDown {
+  from {
+    transform: translateY(-50px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.trainers {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+
+.trainer-card {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.trainer-card img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+  transition: transform 0.3s;
+}
+
+.trainer-card img:hover {
+  transform: scale(1.1);
+}
+
+.about-cta button {
+  background-color: #00ff99;
+  color: #000;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.about-cta button:hover {
+  background-color: #007755;
+  color: white;
+}
+
+/* Gym's Story & Mission */
+.about-story {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 2rem;
+  margin-bottom: 2.5rem;
+  border-radius: 15px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+  transition: transform 0.4s, box-shadow 0.4s;
+  animation: slideIn 1s ease;
+}
+
+.about-story:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+}
+
+.about-story h2 {
+  color: #a8dadc;
+  margin-bottom: 1rem;
+}
+
+.about-story p {
+  line-height: 1.7;
+  color: #f1faee;
+  animation: fadeInUp 1s ease;
+}
+
+/* Meet the Team */
+.about-team {
+  margin-bottom: 3rem;
+  text-align: center;
+}
+
+.about-team h2 {
+  color: #a8dadc;
+  margin-bottom: 1.5rem;
+}
+
+.trainers {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
+.trainer-card {
+  width: 220px;
+  padding: 1rem;
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  transition: transform 0.4s, box-shadow 0.4s;
+  animation: zoomIn 1s ease;
+  cursor: pointer;
+}
+
+.trainer-card:hover {
+  transform: translateY(-10px) scale(1.05);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+}
+
+.trainer-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+
+.trainer-card h3 {
+  color: #e63946;
+  margin-bottom: 0.5rem;
+}
+
+.trainer-card p {
+  color: #333;
+  font-weight: 500;
+}
+
+/* Why Choose Us */
+.about-usps {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 2rem;
+  margin-bottom: 2.5rem;
+  border-radius: 10px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+  animation: fadeInUp 1s ease;
+}
+
+.about-usps ul {
+  list-style: none;
+  padding: 0;
+  font-size: 1.2rem;
+  color: #f1faee;
+}
+
+.about-usps ul li {
+  margin-bottom: 0.7rem;
+  display: flex;
+  align-items: center;
+  animation: bounceIn 1s ease;
+}
+
+.about-usps ul li::before {
+  content: '🔥';
+  margin-right: 0.5rem;
+}
+
+/* Achievements & Success Stories */
+.about-achievements {
+  margin-bottom: 2.5rem;
+  text-align: center;
+}
+
+.success-stories {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 1.5rem;
+  gap: 1rem;
+}
+
+.story {
+  background-color: #e63946;
+  color: #fff;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s;
+  animation: zoomIn 0.8s ease;
+}
+
+.story:hover {
+  transform: translateY(-5px);
+}
+
+.story p {
+  margin-bottom: 0.4rem;
+  font-weight: bold;
+}
+
+/* Stats & Impact */
+.about-stats {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 2rem;
+  margin-bottom: 2.5rem;
+  border-radius: 10px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+  text-align: center;
+}
+
+.stats {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 1rem;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.stat {
+  margin: 1rem;
+  animation: bounceIn 1s ease;
+}
+
+.stat h3 {
+  font-size: 2.4rem;
+  color: #e63946;
+}
+
+.stat p {
+  font-size: 1.2rem;
+  color: #f1faee;
+}
+
+/* Call to Action */
+.about-cta {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.about-cta button {
+  padding: 0.8rem 2rem;
+  background-color: #e63946;
+  color: #fff;
+  border: none;
+  border-radius: 20px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.about-cta button:hover {
+  background-color: #a8dadc;
+  transform: scale(1.1);
+}
+
+/* Animations */
+@keyframes fadeIn {
+  0% { opacity: 0; transform: translateY(-20px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes slideIn {
+  0% { opacity: 0; transform: translateX(-50px); }
+  100% { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes fadeInUp {
+  0% { opacity: 0; transform: translateY(50px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes zoomIn {
+  0% { transform: scale(0.8); opacity: 0; }
+  100% { transform: scale(1); opacity: 1; }
+}
+
+@keyframes bounceIn {
+  0% { transform: scale(0.8); }
+  60% { transform: scale(1.1); }
+  100% { transform: scale(1); }
+}
