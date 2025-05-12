@@ -1,45 +1,60 @@
 // src/components/Footer.jsx
 import React from "react";
-import { FaFacebook, FaInstagram, FaTwitter, FaLinkedin } from "react-icons/fa";
+import { FaFacebook, FaInstagram, FaTwitter, FaLinkedin, FaMapMarkerAlt, FaPhoneAlt, FaEnvelope } from "react-icons/fa";
 import "./Footer.css";
 
 const Footer = () => {
   return (
     <footer className="footer">
       <div className="footer-container">
-        {/* About Section */}
+        
+        {/* Logo & About */}
         <div className="footer-section about">
-          <h3>Gym Power</h3>
-          <p>
-            <span>Transform your body,</span>  
-            elevate your mind. Join us to unleash your power and achieve your ultimate fitness goals.
-          </p>
+          <h2 className="footer-logo">Gym Power</h2>
+          <p>Unleash your strength and push your limits with our expert trainers and modern equipment.</p>
         </div>
 
-        {/* Links Section */}
+        {/* Opening Hours */}
+        <div className="footer-section hours">
+          <h3>Opening Hours</h3>
+          <ul>
+            <li>Mon - Fri: 6:00 AM - 10:00 PM</li>
+            <li>Saturday: 7:00 AM - 8:00 PM</li>
+            <li>Sunday: 8:00 AM - 6:00 PM</li>
+          </ul>
+        </div>
+
+        {/* Quick Links */}
         <div className="footer-section links">
           <h3>Quick Links</h3>
           <ul>
             <li><a href="/">Home</a></li>
-            <li><a href="/about">About</a></li>
+            <li><a href="/about">About Us</a></li>
             <li><a href="/services">Services</a></li>
-            <li><a href="/plan">Membership Plans</a></li>
+            <li><a href="/plan">Membership</a></li>
             <li><a href="/contact">Contact</a></li>
           </ul>
         </div>
 
-        {/* Social Media Section */}
-        <div className="footer-section social">
-          <h3>Follow Us</h3>
+        {/* Contact Info */}
+        <div className="footer-section contact">
+          <h3>Contact Us</h3>
+          <p><FaMapMarkerAlt /> &nbsp; 123 Gym Street, Fit City</p>
+          <p><FaPhoneAlt /> &nbsp; +91 98765 43210</p>
+          <p><FaEnvelope /> &nbsp; support@gympower.com</p>
           <div className="social-icons">
-            <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer"><FaFacebook /></a>
-            <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer"><FaInstagram /></a>
-            <a href="https://www.twitter.com" target="_blank" rel="noopener noreferrer"><FaTwitter /></a>
-            <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer"><FaLinkedin /></a>
+            <a href="https://facebook.com" target="_blank"><FaFacebook /></a>
+            <a href="https://instagram.com" target="_blank"><FaInstagram /></a>
+            <a href="https://twitter.com" target="_blank"><FaTwitter /></a>
+            <a href="https://linkedin.com" target="_blank"><FaLinkedin /></a>
           </div>
         </div>
+
       </div>
-      <p className="footer-bottom">&copy; {new Date().getFullYear()} Gym Power. All Rights Reserved.</p>
+
+      <div className="footer-bottom">
+        <p>&copy; {new Date().getFullYear()} Gym Power. All rights reserved.</p>
+      </div>
     </footer>
   );
 };
